@@ -46,4 +46,5 @@ test('Register User', async ({ page }) => {
   await expect(accountDeleted).toHaveText(/ACCOUNT DELETED!/i, {
     timeout: 10000,
   });
+  await page.click('[data-qa="continue-button"]');
 });
